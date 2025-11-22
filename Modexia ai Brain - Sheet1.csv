@@ -1,0 +1,11 @@
+EmployeeID,FullName,Role,Department,LineManager,Email,Status,CurrentShift,AssetID,LeaveBalance,Location
+MDX-101,Alexander Thorne,CEO,Executive,Board,alex.thorne@modexia.net,Active,Day,MBA-X99,30,New York
+MDX-102,Amara Diallo,CTO (Chief Tech Officer),Network Operations,Alexander Thorne,amara.diallo@modexia.net,Active,Day,LNV-P1,25,Nairobi
+MDX-103,Sarah Jenkins,Head of NOC,Network Operations,Amara Diallo,sarah.j@modexia.net,Active,Night-Rotation,LNV-P5,18,London
+MDX-104,David Kimani,Fiber Field Technician,Field Services,Sarah Jenkins,david.k@modexia.net,Probation,Day,VAN-04,10,Nairobi
+MDX-105,Elena Rodriguez,VP of Enterprise Sales,Sales,Alexander Thorne,elena.r@modexia.net,Active,Day,MAC-M2,22,Madrid
+MDX-106,Kwame Mensah,Corporate Account Manager,Sales,Elena Rodriguez,kwame.m@modexia.net,Active,Day,MAC-M2,15,Accra
+MDX-107,Jessica Wu,HR Director,Human Resources,Alexander Thorne,jessica.w@modexia.net,Active,Day,DEL-XPS,20,Singapore
+MDX-108,Samuel Abiodun,Field Safety Officer,Human Resources,Jessica Wu,sam.a@modexia.net,Onboarding,Day,N/A,0,Lagos
+MDX-109,System Admin,Core Network Architect,IT,Amara Diallo,sysadmin@modexia.net,Active,On-Call,SRV-01,99,Remote
+MDX-110,Priya Patel,Billing Manager,Finance,Alexander Thorne,priya.p@modexia.net,Active,Day,HP-ELT,25,Mumbai
