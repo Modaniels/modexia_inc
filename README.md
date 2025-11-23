@@ -1,4 +1,4 @@
-# Modexia Inc. - ISP Enterprise API Documentation
+cle# Modexia Inc. - ISP Enterprise API Documentation
 
 > **Note:** Modexia Inc. is a **fictional company** created for demonstration, training, and development purposes. All data, names, and scenarios are simulated.
 
@@ -21,17 +21,40 @@ Modexia is a modern ISP enterprise operating in major markets including:
 - **Dark Fiber Leasing**: Custom infrastructure for large organizations
 - **Satellite Backup Links**: Redundant connectivity for critical operations
 
-## 📁 Repository Contents
+## 📁 Repository Structure
 
-### `modexia_master_data.json`
+```
+modexia_inc/
+├── server/              # FastAPI server implementation
+│   ├── main.py         # API server with all endpoints
+│   ├── requirements.txt # Python dependencies
+│   ├── API_SERVER.md   # Server documentation
+│   └── __init__.py     # Package initialization
+├── resources/           # Data files and documentation
+│   ├── modexia_master_data.json  # OpenAPI 3.0.1 specification
+│   ├── Modexia ai Brain - Sheet1.csv  # Business intelligence data
+│   └── *.pdf           # Corporate documentation files
+└── README.md           # This file
+```
+
+### 📦 Resources Folder
+
+**`modexia_master_data.json`**  
 OpenAPI 3.0.1 specification defining the complete Modexia Enterprise API with:
 - **8 Core Endpoints** covering all operational domains
 - **9 Data Schemas** for consistent data modeling
 - **Realistic Sample Data** for testing and development
 - **Query Parameters** for filtering and searching
 
-### `Modexia ai Brain - Sheet1.csv`
+**`Modexia ai Brain - Sheet1.csv`**  
 Supplementary data export containing additional business intelligence and operational metrics.
+
+**PDF Documentation**  
+Corporate overview, data privacy policies, field operations safety, and network sales SOPs.
+
+### 🖥️ Server Folder
+
+Complete FastAPI implementation with all endpoints from the JSON specification. See `server/API_SERVER.md` for detailed server documentation.
 
 ## 🔌 API Endpoints
 
