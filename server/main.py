@@ -3,11 +3,15 @@ Modexia Inc. ISP Enterprise API
 FastAPI server implementing all endpoints from the OpenAPI specification
 """
 
+import os
 from fastapi import FastAPI, Query
 from fastapi.middleware.cors import CORSMiddleware
 from typing import Optional, List
 from pydantic import BaseModel
 from datetime import datetime
+
+# Get port from environment variable (IBM Cloud uses PORT env var)
+PORT = int(os.getenv("PORT", 8000))
 
 app = FastAPI(
     title="Modexia ISP Enterprise API",
@@ -16,7 +20,10 @@ app = FastAPI(
     contact={
         "name": "Modexia IT Support",
         "email": "sysadmin@modexia.net"
-    }
+    },
+    docs_url="/docs",
+    redoc_url="/redoc",
+    openapi_url="/openapi.json"
 )
 
 # CORS middleware
@@ -327,6 +334,11 @@ async def get_products():
     """Get product catalog"""
     return PRODUCTS
 
+@app.get("/health")
+async def health_check():
+    """Health check endpoint for container orchestration"""
+    return {"status": "healthy", "service": "Modexia ISP API", "version": "1.0.0"}
+
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=PORT)
